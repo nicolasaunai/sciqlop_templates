@@ -27,9 +27,7 @@ p.plot("speasy/cda/THEMIS/THA/L2/THA_L2_ESA/tha_peir_density")
 p.plots[3].plot("speasy/cda/THEMIS/THA/L2/THA_L2_ESA/tha_peib_density")  # burst
 
 # Bulk ion speed GSE
-p.plot(
-    "speasy/cda/THEMIS/THA/L2/THA_L2_ESA/tha_peir_t3speasy/cda/THEMIS/THA/L2/THA_L2_ESA/tha_peir_velocity_gse"
-)
+p.plot("speasy/cda/THEMIS/THA/L2/THA_L2_MOM/tha_peim_velocity_gsm")
 p.plots[4].plot(
     "speasy/cda/THEMIS/THA/L2/THA_L2_ESA/tha_peir_t3speasy/cda/THEMIS/THA/L2/THA_L2_ESA/tha_peib_velocity_gse"
 )  # burst
