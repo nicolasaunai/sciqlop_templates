@@ -29,7 +29,7 @@ p.plot("speasy/cda/MMS/MMS1/FGM/MMS1_FGM_SRVY_L2/mms1_fgm_b_gsm_srvy_l2")
 
 p.plot("speasy/cda/MMS/MMS1/DIS/MMS1_FPI_FAST_L2_DIS_MOMS/mms1_dis_temppara_fast")
 p.plots[plots_idx["tB"]].plot(
-    "speasy/cda/MMS/MMS1/DIS/MMS1_FPI_BRST_L2_DIS_MOMS/mms1_dis_tempperp_brst"
+    "speasy/cda/MMS/MMS1/DIS/MMS1_FPI_FAST_L2_DIS_MOMS/mms1_dis_tempperp_fast"
 )
 p.plot("speasy/cda/MMS/MMS1/DIS/MMS1_FPI_FAST_L2_DIS_MOMS/mms1_dis_numberdensity_fast")
 
