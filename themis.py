@@ -39,6 +39,8 @@ p.plots[4].yAxis.setRange(0.01, 150)
 p.plots[1].yAxis.setRange(-450, 450)
 p.plots[4].yAxis.setScaleType(QCPAxis.stLogarithmic)
 p.plots[2].yAxis.setScaleType(QCPAxis.stLogarithmic)
+p.plots[3].yAxis.setTicker(QCPAxisTickerLog())
+p.plots[1].yAxis.setTicker(QCPAxisTickerLog())
 
 for plot in p.plots:
     plot.replot()
