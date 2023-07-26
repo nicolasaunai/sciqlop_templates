@@ -1,0 +1,19 @@
+import json
+import tscat
+from datetime import datetime
+
+def duplicate_catalogue(path_catalogue : str):
+    with tscat.Session() as s:
+        with open(path_catalogue) as json_data:
+            data = json.load(json_data)
+            catalogue = data['catalogues'][0]        # Will only duplicate the first catalogue of the file
+
+        duplicate = tscat.create_catalogue(name = catalogue['name'], author=catalogue['author'],tags = catalogue['tags'], predicate = catalogue['predicate'],events = [])
+        events = []
+
+        for ev in data['events']:        
+            events += [tscat.create_event(start = datetime.strptime(ev['start'],'%Y-%m-%d %H:%M:%S.%f'), stop=datetime.strptime(ev['stop'],'%Y-%m-%d %H:%M:%S.%f'), 
+                                         author=ev['author'], tags = ev['tags'], products = ev['products'])]
+        tscat.add_events_to_catalogue(duplicate,events)
+    
+    return duplicate
