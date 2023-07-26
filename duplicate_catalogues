@@ -17,6 +17,3 @@ def duplicate_catalogue(path_catalogue : str):
         tscat.add_events_to_catalogue(duplicate,events)
     
     return duplicate
-
-duplicate = duplicate_catalogue('BLNico.json')
-duplicate
